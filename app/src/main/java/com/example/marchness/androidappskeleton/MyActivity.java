@@ -10,6 +10,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Button;
+//Time
+import android.os.SystemClock;
+import java.util.concurrent.TimeUnit;
+
 
 
 public class MyActivity extends AppCompatActivity {
@@ -17,6 +21,7 @@ public class MyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SystemClock.sleep(TimeUnit.SECONDS.toMillis(3));
 
         setContentView(R.layout.activity_my);
         Button clicker = (Button) findViewById(R.id.clickButton);
