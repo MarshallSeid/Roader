@@ -18,7 +18,7 @@ public class User {
         }
 
         public void setUserPassword(String password) {
-            this.password = password;
+            this.password = password; //Deal with hashing passwords later on 
         }
 
         public String getUserId(){

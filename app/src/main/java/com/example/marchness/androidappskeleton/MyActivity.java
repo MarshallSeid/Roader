@@ -74,6 +74,12 @@ public class MyActivity extends AppCompatActivity {
         finish();
 
     }
+
+    public void signUp(View signup) {
+        Firebase myFirebaseRef = new Firebase("https://vivid-inferno-1606.firebaseio.com/");
+        setContentView(R.layout.activity_signup);
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
